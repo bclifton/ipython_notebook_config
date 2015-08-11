@@ -1,0 +1,15 @@
+profile_nbserver/
+profile_default/
+
+profile_bc/db
+profile_bc/log
+profile_bc/pid
+profile_bc/security
+profile_bc/startup
+profile_bc/history.sqlite
+profile_bc/ipython_console_config.py
+profile_bc/ipython_kernel_config.py
+profile_bc/ipython_nbconvert_config.py
+profile_bc/ipython_notebook_config.py
+
+notebooks/
