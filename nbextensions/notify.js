@@ -16,8 +16,10 @@ define(["require"], function (require) {
   };
 
   var start_time = current_time();
-  var min_time = 0;
-  var enabled = false;
+  // var min_time = 0; // Original value
+  // var enabled = false; // Original value
+  var min_time = 30;
+  var enabled = true;
   var first_start = true;
   var busy_kernel = true;
 
@@ -98,7 +100,9 @@ define(["require"], function (require) {
     if (enabled && !first_start && !busy_kernel && elapsed_time >= min_time) {
       var n = new Notification(IPython.notebook.notebook_name, {
         body: "Kernel is now idle\n(ran for " + Math.round(elapsed_time) + " secs)",
-        icon: 'jupyter-sq-text.png'
+        // icon: './jupyter-sq-text.png'
+        // icon: 'http://i.imgur.com/kLVUi5c.png'
+        icon: 'https://i.imgur.com/N4kjDc3.png'
       });
       n.onclick = function(event){ window.focus(); }
     }
