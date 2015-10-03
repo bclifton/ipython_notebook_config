@@ -1,6 +1,6 @@
 div#notebook, div.CodeMirror, div.output_area pre, div.output_wrapper, div.prompt {
   font-family: 'Source Code Pro', monospace !important;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 div.text_cell {

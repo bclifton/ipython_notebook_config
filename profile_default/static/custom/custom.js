@@ -80,7 +80,7 @@
  * @class customjs
  * @static
  */
-
-$([IPython.events]).on("app_initialized.NotebookApp", function () {
-    IPython.load_extensions('notify');
-});
+ require(['base/js/utils'],
+ function(utils) {
+     utils.load_extensions('notify');
+ });

@@ -1,4 +1,4 @@
-  /*
+/*
 
 *************************
 Display Web Notifications
@@ -100,11 +100,9 @@ define(["require"], function (require) {
     if (enabled && !first_start && !busy_kernel && elapsed_time >= min_time) {
       var n = new Notification(IPython.notebook.notebook_name, {
         body: "Kernel is now idle\n(ran for " + Math.round(elapsed_time) + " secs)",
-        // icon: './jupyter-sq-text.png'
-        // icon: 'http://i.imgur.com/kLVUi5c.png'
         icon: 'https://i.imgur.com/N4kjDc3.png'
       });
-      n.onclick = function(event){ window.focus(); }
+      n.onclick = function(event){ window.focus(); };
     }
     if (first_start) {
       first_start = false;
